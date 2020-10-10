@@ -4,8 +4,6 @@ CREATE TABLE Projekt(
     Projektkurzbeschreibung mediumtext,
     Startdatum date,
     Abschlussdatum date,
-    ProjektleiterID int NOT NULL,
-    MitarbeiterID int NOT NULL,
     PRIMARY KEY (ProjektID),
     FOREIGN KEY (ProjektleiterID) REFERENCES Projektleiter (ProjektleiterID),
     FOREIGN KEY (MitarbeiterID) REFERENCES Mitarbeiter (MitarbeiterID)
